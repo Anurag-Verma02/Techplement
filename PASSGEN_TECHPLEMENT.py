@@ -20,7 +20,8 @@ while True:
 
       c= int(input("SYMBOL LETTERS COUNT    : "))
    
-      if a>=0 | b>=0 | c>=0 | z>=0 :   
+      if(a>=0 & b>=0 & c>=0 & z>=0) : 
+
         Uletter = list(Uppercase)
         d = Uletter[0:a]
 
@@ -41,13 +42,15 @@ while True:
         print(f"Your required generated password of lengh {len(passw)} is : ")
 
         for i in passw:
-            print(i , end="")
+          print(i , end="")
             
         print("\n\nIF YOU WANT ANOTHER PASSWORD SPECIFY AGAIN")
 
       else:
         print("PLEASE ENTER POSITIVE NUMBER ONLY")
         print("\n\nPLEASE SPECIFY AGAIN")
+
+      
      
    except ValueError:
        print("PLEASE INTER A VALID DIGIT")
